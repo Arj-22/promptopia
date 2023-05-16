@@ -10,8 +10,6 @@ const MyProfile = () => {
     const router = useRouter(); 
     const {data: session} = useSession(); 
 
-    console.log(session.user.id);
-
     const [posts, setPosts] = useState([])
 
     useEffect(()=>{
